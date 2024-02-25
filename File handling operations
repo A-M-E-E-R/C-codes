@@ -1,1 +1,86 @@
 
+#include<stdio.h>
+#include<string.h>
+int main(){
+    FILE *fp=NULL;
+    char f_name[10],input[50],mode[5];
+    printf("enter the respective values for mode selection: \n");
+ss:
+    printf("\n\n1.open file \n2.close file \n3.File status \n4.Exit \n5.for Writing \n6.for Reading\n");
+    int n;
+    scanf("%d",&n);
+    switch(n){
+        case 1:{
+            if(fp!=NULL){
+                printf("\n%s file is already open.",f_name);
+                goto ss;
+            }
+ff:
+            printf("\nEnter the file name: ");
+            scanf("%s",f_name);
+            printf("\nEnter the mode: ");
+            scanf("%s",mode);
+            fp=fopen(f_name,mode);
+            if(fp==NULL){
+                printf("\nSomething went wrong. No file for operation or Check the file name and the mode. Try again. :)");
+                goto ff;
+            }
+            else if(fp!=NULL)
+                printf("\nFile operation successful. File is opened in %s mode",mode);
+            goto ss;
+        }
+        case 2:{
+            if(fp!=NULL){
+                printf("\n%s was opened in %s mode.",f_name,mode);
+                fclose(fp);
+                fp=NULL;
+                printf("\n%s is now successfully closed",f_name);
+            }
+            else
+                printf("\nNo file available for operation.");
+            goto ss;
+        }
+        case 3:{
+            if(fp!=NULL)
+                printf("\n%s is opened in %s mode",f_name,mode);
+            else
+                printf("\nNo file for operation.");
+            goto ss;
+        }
+        case 4:{
+            printf("\nProgram Terminated");
+            printf("\nBye Bye...\nBye...\n...\n..\n.");
+            break;
+        }
+        case 5:{
+            if(fp==NULL)
+                printf("\nNo file for operation.");
+            else{
+                if(strcmp(mode,"r")==0)
+                    printf("Invalid operation to do in %s",mode);
+                else{
+                    printf("\nEnter the INPUT: ");
+                    scanf("%s",input);
+                    fprintf(fp,"%s",input);
+                    getchar();
+                }
+            }
+            goto ss;
+        }
+        case 6:{
+            if(fp==NULL)
+                printf("\nNo file for operation.");
+            else{
+                if(strcmp(mode,"w")==0)
+                    printf("\nInvalid operation to do in %s",mode);
+                else {
+                    rewind(fp);
+                    printf("\nContents inside the file are: ");
+                    fscanf(fp,"%s",input);
+                    printf("%s",input);
+                }
+            }
+            goto ss;
+        }
+    }
+}
