@@ -1,0 +1,14 @@
+Dependencies for Project 'charger_splitter', Target 'Target 1': (DO NOT MODIFY !)
+F (.\Startup.s)(0x532C14EA)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
+F (..\..\Header_Files\lcd_4bit.h)(0x660A9310)()
+F (..\..\Header_Files\Basic_Functions\Functions.h)(0x660A5F23)()
+F (..\Calculator\timer.h)(0x66068987)()
+F (.\charger.h)(0x660A7D60)()
+F (.\main.c)(0x660BB1F8)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\main.o --omf_browse .\main.crf --depend .\main.d)
+I (C:\Keil\ARM\Inc\Philips\lpc214x.h)(0x532C1500)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7E87C)
+I (charger.h)(0x660A7D60)
+I (C:\Users\IDEAPAD\OneDrive\Desktop\projects\Keil\Project\Calculator\timer.h)(0x66068987)
+I (C:\Users\IDEAPAD\OneDrive\Desktop\projects\Keil\Header_Files\lcd_4bit.h)(0x660A9310)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7E87C)
+I (C:\Users\IDEAPAD\OneDrive\Desktop\projects\Keil\Header_Files\Basic_Functions\Functions.h)(0x660A5F23)

@@ -1,0 +1,10 @@
+.\main.o: main.c
+.\main.o: C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h
+.\main.o: C:\Keil\ARM\ARMCC\bin\..\include\stdio.h
+.\main.o: timer.h
+.\main.o: C:\Keil\ARM\Inc\Philips\lpc214x.h
+.\main.o: C:\Keil\ARM\ARMCC\bin\..\include\string.h
+.\main.o: C:\\Users\\IDEAPAD\\OneDrive\\Desktop\\projects\\Keil\\Project\\Calculator\\arith_math.h
+.\main.o: C:\\Users\\IDEAPAD\\OneDrive\\Desktop\\projects\\Keil\\Header_Files\\Basic_Functions\\Functions.h
+.\main.o: keypad_math.h
+.\main.o: C:\\Users\\IDEAPAD\\OneDrive\\Desktop\\projects\\Keil\\Header_Files\\lcd.h
