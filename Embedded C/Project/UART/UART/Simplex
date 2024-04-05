@@ -1,0 +1,17 @@
+uartsimplex.c
+#include<LPC214X.h>
+#include "UARTTIMERs.h"
+#include "UARTs.h"
+int main(void) {
+	 unsigned char mydata[] = "Hello, UART!";
+    // Initialize UART
+    initUART();
+
+    // Example: Sending a string
+   
+    printUART(mydata);
+
+    while (1) {
+        // Your application code here
+    }
+}
