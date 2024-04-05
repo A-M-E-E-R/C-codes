@@ -1,0 +1,48 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\IDEAPAD\OneDrive\Desktop\projects\Keil\Project\SPI\SPI.uvproj
+Project File Date:  04/03/2024
+
+<h2>Output:</h2>
+Rebuild target 'Target 1'
+assembling Startup.s...
+compiling SPI_master.c...
+lcd.h(48): warning:  #1-D: last line of file ends without a newline
+  }
+SPI_master.c(18): warning:  #550-D: variable "flush" was set but never used
+        char flush;
+SPI_master.c(53): warning:  #177-D: variable "rx1" was declared but never referenced
+        unsigned char rx1;
+SPI_master.c(54): warning:  #177-D: variable "receive" was declared but never referenced
+        char receive, transmit[7];
+SPI_master.c: 4 warnings, 0 errors
+linking...
+Program Size: Code=2556 RO-data=16 RW-data=0 ZI-data=1256  
+FromELF: creating hex file...
+".\SPI.axf" - 0 Error(s), 4 Warning(s).
+</pre>
+</body>
+</html>
+E: Symbol __ARM_use_no_argv multiply defined (by spi_slave1.o and spi_master.o).
+.\SPI.axf: Error: L6200E: Symbol pin_write multiply defined (by spi_slave1.o and spi_master.o).
+.\SPI.axf: Error: L6200E: Symbol pin_read multiply defined (by spi_slave1.o and spi_master.o).
+.\SPI.axf: Error: L6200E: Symbol port_write multiply defined (by spi_slave1.o and spi_master.o).
+.\SPI.axf: Error: L6200E: Symbol initPLL multiply defined (by spi_slave1.o and spi_master.o).
+.\SPI.axf: Error: L6200E: Symbol delayms multiply defined (by spi_slave1.o and spi_master.o).
+.\SPI.axf: Error: L6200E: Symbol delayus multiply defined (by spi_slave1.o and spi_master.o).
+.\SPI.axf: Error: L6200E: Symbol LCDcommand multiply defined (by spi_slave1.o and spi_master.o).
+.\SPI.axf: Error: L6200E: Symbol LCDdata multiply defined (by spi_slave1.o and spi_master.o).
+.\SPI.axf: Error: L6200E: Symbol LCDstring multiply defined (by spi_slave1.o and spi_master.o).
+.\SPI.axf: Error: L6200E: Symbol initLCD multiply defined (by spi_slave1.o and spi_master.o).
+.\SPI.axf: Error: L6200E: Symbol main multiply defined (by spi_slave1.o and spi_master.o).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 12 error messages.
+".\SPI.axf" - 12 Error(s), 5 Warning(s).
+Target not created
+ error messages.
+".\SPI.axf" - 12 Error(s), 6 Warning(s).
+Target not created
