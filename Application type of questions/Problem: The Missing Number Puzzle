@@ -1,13 +1,13 @@
-Problem: The Missing Number Puzzle
+# Problem: The Missing Number Puzzle
 
 You are given an array containing N integers, where the numbers are supposed to be from 1 to N+1 but one number is missing.
 
-👉 Your task is to find the missing number.
+## 👉 Your task is to find the missing number.
 
 Requirements:
 
-The program should read N.
+- The program should read N.
 
-Read N numbers (all distinct, between 1 and N+1).
+- Read N numbers (all distinct, between 1 and N+1).
 
-Output the missing number.
+- Output the missing number.
