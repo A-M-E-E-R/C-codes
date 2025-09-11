@@ -1,0 +1,16 @@
+Write a program to find the longest contiguous subarray of integers where the sum of even numbers equals the sum of odd numbers.
+
+Requirements
+
+Read an integer N (array size) and then N integers.
+
+Find the length of the longest contiguous subarray where:
+
+sum(even numbers)
+=
+sum(odd numbers)
+sum(even numbers)=sum(odd numbers)
+
+Output the length and the subarray itself (first occurrence if multiple).
+
+If no such subarray exists, output 0 or mention.
